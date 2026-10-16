@@ -3,60 +3,77 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Harbor Lane Bakery - CommentBox demo</title>
+  <title>Fieldnote - CommentBox demo</title>
   <meta name="description" content="A demo site for CommentBox. Click any text and leave a comment.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="topbar">
     <div class="wrap topbar-inner">
-      <span class="brand">Harbor Lane Bakery</span>
-      <span class="tag">Demo site</span>
+      <span class="brand">Fieldnote</span>
+      <nav class="nav" aria-label="Fieldnote">
+        <a href="#work">Work</a>
+        <a href="#studio">Studio</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="wrap">
-        <h1>Try it on this page</h1>
-        <p class="hero-sub" id="hero-sub">Every comment you leave on this page is sent straight to your own agent, which reads it, finds the right spot in the code and opens a pull request.</p>
-        <p class="hero-note">Harbor Lane Bakery is a fictional bakery. This is a demo site for CommentBox.</p>
+    <section class="hero" aria-labelledby="fn-title">
+      <div class="wrap hero-inner">
+        <div>
+          <p class="eyebrow">Calm interiors for small spaces</p>
+          <h1 id="fn-title">Book a free visit</h1>
+          <p class="lede">We plan, source and style homes under 60 m², from first sketch to the last lamp.</p>
+          <p class="actions">
+            <a class="btn" href="#contact">Pick a date</a>
+            <a class="link" href="#work">See our work</a>
+          </p>
+          <p class="hero-note">Fieldnote is a fictional interiors studio. This is a demo site for CommentBox.</p>
+        </div>
+        <div class="room" role="img" aria-label="Illustration of a calm living room with a round lamp, a low sofa and a side table">
+          <span class="lamp"></span><span class="sofa"></span><span class="table"></span><span class="rug"></span>
+        </div>
       </div>
     </section>
 
-    <section class="bakery" aria-labelledby="bake-title">
+    <section id="work" class="section" aria-labelledby="work-title">
       <div class="wrap">
-        <h2 id="bake-title">What we bake</h2>
+        <h2 id="work-title">Recent work</h2>
         <ul class="items">
           <li>
-            <h3>Sourdough loaf</h3>
-            <p>A slow, overnight dough with a dark crust and an open crumb.</p>
+            <h3>Studio flat</h3>
+            <p>A sleeping nook behind a linen curtain and storage under the window seat.</p>
           </li>
           <li>
-            <h3>Cardamom buns</h3>
-            <p>Soft knotted buns with butter, sugar and freshly ground cardamom.</p>
+            <h3>Attic room</h3>
+            <p>A sloped ceiling turned into a reading corner, a desk and a guest bed that folds away.</p>
           </li>
           <li>
-            <h3>Rye crackers</h3>
-            <p>Thin and crisp, with seeds on top. Good with cheese or soup.</p>
+            <h3>Garden room</h3>
+            <p>A narrow extension with built-in shelving and one long table for dinners and work.</p>
           </li>
         </ul>
+      </div>
+    </section>
 
-        <div class="info">
-          <div>
-            <h2>Opening hours</h2>
-            <dl class="hours">
-              <dt>Tuesday to Friday</dt><dd>7:30 to 17:00</dd>
-              <dt>Saturday</dt><dd>8:00 to 15:00</dd>
-              <dt>Sunday and Monday</dt><dd>Closed</dd>
-            </dl>
-          </div>
-          <div>
-            <h2>Visit us</h2>
-            <p>Harbor Lane 12</p>
-            <p class="muted">Around the corner from the old harbor. Bread is baked every morning on site.</p>
-          </div>
-        </div>
+    <section id="studio" class="section" aria-labelledby="studio-title">
+      <div class="wrap">
+        <h2 id="studio-title">How we work</h2>
+        <ol class="steps">
+          <li><strong>Visit.</strong> We measure, listen and take photos. One hour, at your place.</li>
+          <li><strong>Plan.</strong> A floor plan, a mood board and a shopping list.</li>
+          <li><strong>Style.</strong> We order, assemble and place everything, down to the last lamp.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <h2 id="contact-title">Plan a first visit</h2>
+        <p class="muted">One hour, at your place, no obligation.</p>
+        <p><a class="btn" href="#contact">Pick a date</a></p>
       </div>
     </section>
   </main>
