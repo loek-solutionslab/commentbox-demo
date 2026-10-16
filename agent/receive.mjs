@@ -55,6 +55,7 @@ const oneLine = (s) => String(s ?? '').replace(/\s+/g, ' ').trim()
 function elementLabel(c) {
   const selector = c.selector ?? ''
   if (c.tagName?.toUpperCase() === 'P' && /(^|[\s.#])hero-sub\b/.test(selector)) return 'Hero subline'
+  if (c.tagName?.toUpperCase() === 'H1') return 'Headline'
   return 'Page text'
 }
 
