@@ -1,0 +1,11 @@
+node_modules/
+data/
+.env
+.env.*
+!.env.example
+*.sqlite
+*.sqlite-*
+commentbox/.dev.vars
+commentbox/node_modules/
+commentbox/.wrangler/
+grok-bot.env

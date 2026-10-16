@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harbor Lane Bakery - CommentBox demo</title>
+  <meta name="description" content="A demo site for CommentBox. Click any text and leave a comment.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <span class="brand">Harbor Lane Bakery</span>
+      <span class="tag">Demo site</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <h1>Try it on this page</h1>
+        <p class="hero-sub" id="hero-sub">Every comment you leave on this page is sent straight to your own agent, which reads it, finds the right spot in the code and opens a pull request.</p>
+        <p class="hero-note">Harbor Lane Bakery is a fictional bakery. This is a demo site for CommentBox.</p>
+      </div>
+    </section>
+
+    <section class="bakery" aria-labelledby="bake-title">
+      <div class="wrap">
+        <h2 id="bake-title">What we bake</h2>
+        <ul class="items">
+          <li>
+            <h3>Sourdough loaf</h3>
+            <p>A slow, overnight dough with a dark crust and an open crumb.</p>
+          </li>
+          <li>
+            <h3>Cardamom buns</h3>
+            <p>Soft knotted buns with butter, sugar and freshly ground cardamom.</p>
+          </li>
+          <li>
+            <h3>Rye crackers</h3>
+            <p>Thin and crisp, with seeds on top. Good with cheese or soup.</p>
+          </li>
+        </ul>
+
+        <div class="info">
+          <div>
+            <h2>Opening hours</h2>
+            <dl class="hours">
+              <dt>Tuesday to Friday</dt><dd>7:30 to 17:00</dd>
+              <dt>Saturday</dt><dd>8:00 to 15:00</dd>
+              <dt>Sunday and Monday</dt><dd>Closed</dd>
+            </dl>
+          </div>
+          <div>
+            <h2>Visit us</h2>
+            <p>Harbor Lane 12</p>
+            <p class="muted">Around the corner from the old harbor. Bread is baked every morning on site.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>via CommentBox, by <a href="https://solutionslab.net">Solutions Lab</a></p>
+    </div>
+  </footer>
+  <script src="http://localhost:8787/widget.js" data-commentbox defer></script>
+</body>
+</html>

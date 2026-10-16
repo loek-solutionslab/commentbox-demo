@@ -1,0 +1,16 @@
+{
+  "name": "commentbox-demo",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "site": "node scripts/serve.mjs",
+    "server": "node --env-file=.env scripts/server.mjs",
+    "agent": "node --env-file=.env agent/receive.mjs"
+  },
+  "devDependencies": {
+    "@commentbox/server-node": "0.1.2"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "commentbox",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:migrate": "wrangler d1 migrations apply commentbox --remote",
+    "db:migrate:local": "wrangler d1 migrations apply commentbox --local"
+  },
+  "dependencies": {
+    "@commentbox/server-worker": "^0.1.2"
+  },
+  "devDependencies": {
+    "wrangler": "^3.80.0"
+  }
+}
