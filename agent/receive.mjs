@@ -59,7 +59,8 @@ function elementLabel(c) {
 }
 
 function issueTitle(c) {
-  let text = oneLine(c.text).replace(/[.\s]+$/, '')
+  // Only the part before the first colon: "Make this shorter: say ..." -> "Make this shorter".
+  let text = oneLine(c.text).split(':')[0].replace(/[.\s]+$/, '')
   // "Make it shorter" -> "make it shorter", but leave words like "CTA" alone.
   if (/^[A-Z][a-z]/.test(text)) text = text[0].toLowerCase() + text.slice(1)
   if (text.length > 60) text = text.slice(0, 60).trimEnd()
